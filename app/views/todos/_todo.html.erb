@@ -1,0 +1,8 @@
+<div class="todo">
+  <p>Title: <strong><%= todo.title %></strong></p>
+  <p>What to actuallly do: <strong><%= todo.body %></strong></p>
+  <%= check_box_tag :box %>	
+  <br>
+  <%= link_to "Show Page", todo if action_name == "index" %> ||
+  <%= link_to "Edit Page", edit_todo_path(todo) %>
+</div>
